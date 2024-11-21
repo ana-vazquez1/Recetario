@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="img-container">
+            <img src="img/2.jpg" alt="">
+        </div>
+
+        <div class="form">
+            <h2>¡Bienvenido!</h2>
+            <h3>Crear cuenta</h3>
+            <form method="POST" action="registro.php">
+                <div class="field">
+                    <div class="nombre">
+                        <span>Nombre:</span>
+                        <input type="text" name="name" pattern="[A-Za-z0-9_-]" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="email">
+                        <span>Correo electrónico:</span>
+                        <input type="email" name="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="password">
+                        <span>Contraseña:</span>
+                        <input type="password" name="password" pattern="[A-Za-z0-9_-]{1,20}" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="confirm-password">
+                        <span>Confirmar contraseña:</span>
+                        <input type="password" name="confirm-password" required>
+                    </div>
+                </div>
+
+                <div class="button">
+                    <button type="submit">Registrarse</button>
+                </div>
+            </form>
+
+            <div class="login-link">
+                <h5>¿Ya tienes cuenta? <a href="index.html">Iniciar sesión</a></h5>
+            </div>
+        </div>
+    </div>
+    <script src="js/registro.js"></script>
+</body>
+
+</html>

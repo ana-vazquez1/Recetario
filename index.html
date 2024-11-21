@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="img-container">
+            <img src="img/1.jpg" alt="">
+        </div>
+    
+        <div class="form">
+            <h2>¡Hola!</h2>
+            <h3>Iniciar Sesión</h3>
+            <form action="login.php" method="POST">
+                <div class="field">
+                    <div class="email">
+                        <span>Correo:</span> <br><br>
+                        <input type="text" name="email" pattern="[A-Za-z0-9_-]{1,20}" required>
+                    </div>
+                    <br>
+                    <div class="password">
+                        <span>Contraseña:</span> <br><br>
+                        <input type="password" name="password" pattern="[A-Za-z0-9_-]{1,20}" required>
+                    </div> 
+                    <div class="olvidar-contra">
+                        <h5><a href="#">¿Olvidaste tu contraseña?</a></h5>
+                    </div>
+                    <button>
+                        <samp style="font-family: Montserrat, sans-serif;">Entrar</samp>
+                    </button>
+                </div>
+            </form>
+            <div class="registrar">
+                <h5>¿No tienes cuenta?<a href="registro.html">Registrate</a></h5>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
